@@ -14,7 +14,13 @@ jobs:
               run: |
                 docker build -t theoafactor/app_deploy_test:1 .
 
-            
+            - name: "Login into Docker HUb"
+              run: | 
+                docker login -u theoafactor -p ${{ secrets.DOCKERHUB_PASSWORD }} 
+
+        
+
+
 
 
 
