@@ -17,8 +17,10 @@ jobs:
             - name: "Login into Docker HUb"
               run: | 
                 docker login -u theoafactor -p ${{ secrets.DOCKERHUB_PASSWORD }} 
-
-        
+                
+            - name: "Push the image to Docker Hub"
+              run: |
+                docker push theoafactor/app_deploy_test:1
 
 
 
