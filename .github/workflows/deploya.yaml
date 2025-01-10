@@ -12,7 +12,7 @@ jobs:
 
             - name: "Build the image"
               run: |
-                docker build -t theoafactor/app_deploy_test:1 .
+                docker build -t theoafactor/app_deploy_test:2 .
 
             - name: "Login into Docker HUb"
               run: | 
@@ -20,7 +20,7 @@ jobs:
                 
             - name: "Push the image to Docker Hub"
               run: |
-                docker push theoafactor/app_deploy_test:1
+                docker push theoafactor/app_deploy_test:2
 
 
 
